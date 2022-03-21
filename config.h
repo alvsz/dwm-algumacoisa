@@ -50,12 +50,14 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-l", "7", "-g", "2", "-h", "40", "-bw", "5", "-fn", dmenufont, "-p", "Executar: ", "-sb", sel_bg, "-sf", sel_fg, NULL };
+static const char *clipmenucmd[] = { "clipmenu", "-l", "7", "-g", "2", "-h", "40", "-bw", "5", "-i", "-fn", dmenufont, "-sb", sel_bg, "-sf", sel_fg, NULL };
 static const char *termcmd[]  = { "st", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY,                       XK_v,      spawn,          {.v = clipmenucmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_Right,  focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_Left,   focusstack,     {.i = -1 } },
