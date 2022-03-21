@@ -1,8 +1,8 @@
 # dwm-alvsz
 minha configuração do dwm sem nenhum patch
 ## atalhos do teclado
-- Super+D > lançador (https://github.com/alvsz/dmenu-alvsz)
-- Super+Shift+Enter > terminal
+- Super+D > [lançador](https://github.com/alvsz/dmenu-alvsz)
+- Super+Shift+Enter > [terminal](https://github.com/alvsz/st-alvsz)
 - Super+B > habilitar barra superior
 - Super+Setas direita/esquerta > mudar janela em foco
 - Super+Shift+Setas
