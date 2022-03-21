@@ -16,4 +16,4 @@ minha configuração do dwm sem nenhum patch
 - Super+Shift+q > fecha o dwm
 ## relevante
 [pywal](https://github.com/dylanaraps/pywal) para as cores do sistema
-- depois de rodar 'wal -b suaimagem' remova a penúltima linha de ~.cache/wal/colors-wal-dwm.h para funcionar sem o patch de cores
+- depois de rodar ´wal -b suaimagem´ remova a penúltima linha de ~.cache/wal/colors-wal-dwm.h para funcionar sem o patch de cores
