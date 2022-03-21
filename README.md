@@ -13,3 +13,5 @@ minha configuração do dwm sem nenhum patch
 - Super+f > janelas flutuando
 - Super+m > maximiza a janela ativa
 - Super+Shift+q > fecha o dwm
+## relevante
+[pywal](https://github.com/dylanaraps/pywal) para as cores do sistema
