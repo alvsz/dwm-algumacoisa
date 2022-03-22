@@ -56,6 +56,7 @@ static const char *termcmd[]      = { "st", NULL };
 static const char *upvol[]        = { "pactl", "set-sink-volume", "0", "+5%",     NULL };
 static const char *downvol[]      = { "pactl", "set-sink-volume", "0", "-5%",     NULL };
 static const char *mutevol[]      = { "pactl", "set-sink-mute",   "0", "toggle",  NULL };
+static const char *music[]        = { "dev.alextren.Spot", NULL };
 static const char *playpause[]    = { "playerctl", "play-pause", NULL };
 static const char *next[]         = { "playerctl", "next", NULL };
 static const char *previous[]     = { "playerctl", "previous", NULL };
