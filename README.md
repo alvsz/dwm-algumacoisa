@@ -21,6 +21,7 @@ minha configuração do dwm sem nenhum patch
 - depois de rodar `wal -b suaimagem` remova a penúltima linha de ~.cache/wal/colors-wal-dwm.h para funcionar sem o patch de cores
 
 os controles de som são para pulseaudio e o player de música é a versão flatpak de [spot](https://github.com/xou816/spot)
+
 [mpris](https://github.com/hoyon/mpv-mpris) para usar os controles de mídia no mpv
 
 
