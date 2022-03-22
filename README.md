@@ -1,5 +1,6 @@
 # dwm-alvsz
 minha configuração do dwm
+
 os patches usados estçao em ./patches
 ## atalhos do teclado
 - Super+D > [lançador](https://github.com/alvsz/dmenu-alvsz)
