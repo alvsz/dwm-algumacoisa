@@ -22,8 +22,7 @@ minha configuração do dwm sem nenhum patch
 
 os controles de som são para pulseaudio e o player de música é a versão flatpak de [spot](https://github.com/xou816/spot)
 
-[mpris](https://github.com/hoyon/mpv-mpris) para usar os controles de mídia no mpv
-
+[playerctl](https://github.com/altdesktop/playerctl) para usar os controles de mídia e [mpv-mpris](https://github.com/hoyon/mpv-mpris) para o mpv
 
 
 
