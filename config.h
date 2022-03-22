@@ -92,6 +92,10 @@ static Key keys[] = {
 	{ 0,                            XF86XK_AudioMute,           spawn,          {.v = mutevol } },
 	{ 0,                            XF86XK_AudioRaiseVolume,    spawn,          {.v = upvol } },
 	{ 0,                            XF86XK_Tools,               spawn,          {.v = music } },
+	{ 0,                            XF86XK_AudioNext,           spawn,          {.v = next } },
+	{ 0,                            XF86XK_AudioPlay,           spawn,          {.v = playpause } },
+	{ 0,                            XF86XK_AudioPrev,           spawn,          {.v = previous } },
+	{ 0,                            XF86XK_AudioStop,           spawn,          {.v = stop } },
 };
 
 /* button definitions */
