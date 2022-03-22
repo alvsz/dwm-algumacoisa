@@ -50,13 +50,16 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-l", "7", "-g", "2", "-h", "40", "-bw", "5", "-fn", dmenufont, "-p", "Executar: ", "-sb", sel_bg, "-sf", sel_fg, NULL };
-static const char *clipmenucmd[] = { "clipmenu", "-l", "7", "-g", "2", "-h", "40", "-bw", "5", "-i", "-fn", dmenufont, "-sb", sel_bg, "-sf", sel_fg, NULL };
-static const char *termcmd[]  = { "st", NULL };
-static const char *upvol[]    = { "pactl", "set-sink-volume", "0", "+5%",     NULL };
-static const char *downvol[]  = { "pactl", "set-sink-volume", "0", "-5%",     NULL };
-static const char *mutevol[]  = { "pactl", "set-sink-mute",   "0", "toggle",  NULL };
-static const char *music[]    = { "dev.alextren.Spot", NULL };
+static const char *dmenucmd[]     = { "dmenu_run", "-l", "7", "-g", "2", "-h", "40", "-bw", "5", "-fn", dmenufont, "-p", "Executar: ", "-sb", sel_bg, "-sf", sel_fg, NULL };
+static const char *clipmenucmd[]  = { "clipmenu", "-l", "7", "-g", "2", "-h", "40", "-bw", "5", "-i", "-fn", dmenufont, "-sb", sel_bg, "-sf", sel_fg, NULL };
+static const char *termcmd[]      = { "st", NULL };
+static const char *upvol[]        = { "pactl", "set-sink-volume", "0", "+5%",     NULL };
+static const char *downvol[]      = { "pactl", "set-sink-volume", "0", "-5%",     NULL };
+static const char *mutevol[]      = { "pactl", "set-sink-mute",   "0", "toggle",  NULL };
+static const char *playpause[]    = { "playerctl", "play-pause", NULL };
+static const char *next[]         = { "playerctl", "next", NULL };
+static const char *previous[]     = { "playerctl", "previous", NULL };
+static const char *stop[]         = { "playerctl", "stop", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
