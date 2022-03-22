@@ -5,14 +5,14 @@ static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Cantarell:size=13", "JoyPixels:pixelsize=12:antialias=true:autohint:true" };
+static const char *fonts[]          = { "Cantarell:size=13", "JoyPixels:pixelsize=12:antialias=true:autohint:true", "Font Awesome:size=16" };
 static const char dmenufont[]       = "Cantarell:size=15";
 
 #include "/home/mamba/.cache/wal/colors-wal-dwm.h"
 #include <X11/XF86keysym.h>
 
 /* tagging */
-static const char *tags[] = { ">_", "www", "IVI", "o-o", "BD", ":L" };
+static const char *tags[] = { "  ", "  ", "  ", "  ", "  ", "  " };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -32,9 +32,9 @@ static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen win
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[]=",      tile },    /* first entry is default */
-	{ "><>",      NULL },    /* no layout function means floating behavior */
-	{ "[M]",      monocle },
+	{ "  ",      tile },    /* first entry is default */
+	{ "  ",      NULL },    /* no layout function means floating behavior */
+	{ "  ",      monocle },
 };
 
 /* key definitions */
@@ -53,14 +53,15 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[]     = { "dmenu_run", "-l", "7", "-g", "2", "-h", "40", "-bw", "5", "-fn", dmenufont, "-p", "Executar: ", "-sb", sel_bg, "-sf", sel_fg, NULL };
 static const char *clipmenucmd[]  = { "clipmenu", "-l", "7", "-g", "2", "-h", "40", "-bw", "5", "-i", "-fn", dmenufont, "-sb", sel_bg, "-sf", sel_fg, NULL };
 static const char *termcmd[]      = { "st", NULL };
-static const char *upvol[]        = { "pactl", "set-sink-volume", "0", "+5%",     NULL };
-static const char *downvol[]      = { "pactl", "set-sink-volume", "0", "-5%",     NULL };
-static const char *mutevol[]      = { "pactl", "set-sink-mute",   "0", "toggle",  NULL };
-static const char *music[]        = { "dev.alextren.Spot", NULL };
+static const char *stop[]         = { "playerctl", "stop", NULL };
+static const char *previous[]     = { "playerctl", "previous", NULL };
 static const char *playpause[]    = { "playerctl", "play-pause", NULL };
 static const char *next[]         = { "playerctl", "next", NULL };
-static const char *previous[]     = { "playerctl", "previous", NULL };
-static const char *stop[]         = { "playerctl", "stop", NULL };
+
+static const char *music[]        = { "dev.alextren.Spot", NULL };
+static const char *downvol[]      = { "pactl", "set-sink-volume", "0", "-5%",     NULL };
+static const char *upvol[]        = { "pactl", "set-sink-volume", "0", "+5%",     NULL };
+static const char *mutevol[]      = { "pactl", "set-sink-mute",   "0", "toggle",  NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
