@@ -8,11 +8,11 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int usealtbar          = 0;        /* 1 means use non-dwm status bar */
 static const char *altbarclass      = "Polybar"; /* Alternate bar class name */
-static const char *altbarcmd        = "$HOME/.config/polybar/launch.sh"; /* Alternate bar launch command */
+static const char *altbarcmd        = "/home/mamba/.config/polybar/launch.sh"; /* Alternate bar launch command */
 static const char *fonts[]          = { "Cantarell:size=13", "JoyPixels:pixelsize=12:antialias=true:autohint:true", "Font Awesome:size=16" };
 static const char dmenufont[]       = "Cantarell:size=15";
 
-#include "$HOME/.cache/wal/colors-wal-dwm.h"
+#include "/home/mamba/.cache/wal/colors-wal-dwm.h"
 #include <X11/XF86keysym.h>
 
 /* tagging */
