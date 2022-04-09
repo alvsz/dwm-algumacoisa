@@ -29,17 +29,19 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class                   instance    title                 tags mask     isfloating   monitor */
-	{ "Pwcalculator",          NULL,       NULL,                 0,            1,           -1 },
-	{ "st-256color",           NULL,       NULL,                 1,            0,           -1 },
-	{ "firefox",               NULL,       NULL,                 1 << 1,       0,           -1 },
-	{ "Gedit",                 NULL,       NULL,                 1 << 2,       0,           -1 },
-	{ "Gimp",                  NULL,       NULL,                 1 << 2,       0,           -1 },
-	{ "Geary",                 NULL,       NULL,                 1 << 3,       0,           -1 },
-	{ "Lutris",                NULL,       NULL,                 1 << 4,       0,           -1 },
-	{ "Steam",                 NULL,       NULL,                 1 << 4,       0,           -1 },
-	{ "Steam",                 NULL,       "Lista de amigos",    1 << 4,       1,           -1 },
-	{ "Org.gnome.Nautilus",    NULL,       NULL,                 1 << 5,       0,           -1 },
+	/* class                   instance         title                 tags mask     isfloating   monitor */
+	{ "Pwcalculator",          NULL,            NULL,                 0,            1,           -1 },
+	{ "st-256color",           NULL,            NULL,                 1,            0,           -1 },
+	{ "firefox",               NULL,            NULL,                 1 << 1,       0,           -1 },
+	{ "librewolf",             NULL,            NULL,                 1 << 1,       0,           -1 },
+	{ "Gedit",                 NULL,            NULL,                 1 << 2,       0,           -1 },
+	{ NULL,                    "libreoffice",   NULL,                 1 << 2,       0,           -1 },
+	{ "Gimp",                  NULL,            NULL,                 1 << 2,       0,           -1 },
+	{ "Geary",                 NULL,            NULL,                 1 << 3,       0,           -1 },
+	{ "Lutris",                NULL,            NULL,                 1 << 4,       0,           -1 },
+	{ "Steam",                 NULL,            NULL,                 1 << 4,       0,           -1 },
+	{ "Steam",                 NULL,            "Lista de amigos",    1 << 4,       1,           -1 },
+	{ "Org.gnome.Nautilus",    NULL,            NULL,                 1 << 5,       0,           -1 },
 };
 
 /* layout(s) */
