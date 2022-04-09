@@ -20,7 +20,7 @@ os patches usados estçao em ./patches
 
 ## relevante
 [pywal](https://github.com/dylanaraps/pywal) para as cores do sistema
-- depois de rodar `wal -b suaimagem` remova a penúltima linha de ~.cache/wal/colors-wal-dwm.h para funcionar sem o patch de cores
+- depois de rodar `wal -b imagem` remova a penúltima linha de ~.cache/wal/colors-wal-dwm.h para funcionar sem o patch de cores
 
 os controles de som são para pulseaudio e o player de música é a versão flatpak de [spot](https://github.com/xou816/spot)
 
