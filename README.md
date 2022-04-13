@@ -1,4 +1,5 @@
-# dwm-alvsz
+🤦🤦🤦eu acabei misturando alguns arquivos no meu computador então esse repositorio não deve funcionar mais 
+## dwm-alvsz
 minha configuração do dwm
 
 os patches usados estçao em ./patches
